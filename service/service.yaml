@@ -7,4 +7,4 @@ spec:
   template:
     spec:
       containers:
-        - image: docker.io/hilmarp/app:2689396475
+        - image: hilmarp/app:2689396475
