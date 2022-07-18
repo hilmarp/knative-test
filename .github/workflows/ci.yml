@@ -52,16 +52,14 @@ jobs:
         push: ${{ github.event_name != 'pull_request' }}
         tags: hilmarp/app:${{ github.run_id }}
 
-    - name: Update service.yaml
-      uses: fjogeleit/yaml-update-action@main
-      with:
-        valueFile: 'service/service.yaml'
-        propertyPath: 'spec.template.spec.containers[0].image'
-        value: hilmarp/app:${{ github.run_id }}
-        commitChange: true
-        updateFile: true
-        targetBranch: main
-        branch: main
-        masterBranchName: main
-        createPR: false
-        message: 'Update Image: hilmarp/app:${{ github.run_id }}'
+    # - name: Update service.yaml
+    #   uses: fjogeleit/yaml-update-action@main
+    #   with:
+    #     valueFile: 'service/service.yaml'
+    #     propertyPath: 'spec.template.spec.containers[0].image'
+    #     value: hilmarp/app:${{ github.run_id }}
+    #     targetBranch: main
+    #     branch: main
+    #     masterBranchName: main
+    #     createPR: false
+    #     message: 'Update Image: hilmarp/app:${{ github.run_id }}'
