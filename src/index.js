@@ -9,7 +9,7 @@ app.get('*', async (req, res) => {
 
     res.json({
         fact: fact.data[0],
-        random: 'stuff 2'
+        random: 'stuff 3'
     });
 });
 
