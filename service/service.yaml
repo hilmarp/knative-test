@@ -7,4 +7,4 @@ spec:
   template:
     spec:
       containers:
-        - image: hilmarp/app:2689965318
+        - image: hilmarp/app:2690057220
